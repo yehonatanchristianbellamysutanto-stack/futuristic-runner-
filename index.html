@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cyberpunk Subway Runner</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+    <div id="score">Score: 0</div>
+    <div id="coins">Coins: 0</div>
+    <button id="startBtn">Start</button>
+    <button id="shopBtn">Shop</button>
+    <button id="retryBtn" style="display:none;">Retry</button>
+</div>
+
+<!-- Shop popup -->
+<div id="shopPopup" class="popup" style="display:none;">
+    <h2>Shop - Skins</h2>
+    <div class="skin" data-cost="0">Cyberpunk Boy (Free)</div>
+    <div class="skin" data-cost="10000">Sakura Naruto</div>
+    <div class="skin" data-cost="100000">Firefly Honkai</div>
+    <button id="closeShop">Close</button>
+</div>
+
+<!-- Pop-up message -->
+<div id="popupMessage" class="popup" style="display:none;">
+    <p>Haha try again</p>
+    <button id="closePopup">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
